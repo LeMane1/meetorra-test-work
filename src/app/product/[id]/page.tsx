@@ -7,6 +7,7 @@ export default async function ProductPage(props: {
   }>
 }) {
   const params = await props.params
+  // Fake api request
   const product = products.find(p => p.id === Number(params.id))
   
   if (!product) return <p>Товар не найден</p>
